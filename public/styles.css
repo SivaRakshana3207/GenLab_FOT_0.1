@@ -165,6 +165,7 @@ body {
 .brand-logo {
   width: 32px;
   height: 20px;
+  filter: brightness(0) saturate(0) invert(0.96);
 }
 
 .headline-row {
