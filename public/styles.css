@@ -225,6 +225,17 @@ h1 {
   flex: 1;
 }
 
+.footer {
+  margin-top: 8px;
+  font-size: 11px;
+  opacity: 0.82;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
 .left-copy h2 {
   margin: 0;
   font-size: 46px;
@@ -392,6 +403,181 @@ h1 {
   .rotating-logo {
     width: 96px;
     height: 96px;
+  }
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    height: auto;
+    min-height: 100%;
+  }
+
+  .splash-stack {
+    width: min(86vmin, 430px);
+  }
+
+  .splash-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .hero {
+    min-height: 100dvh;
+    height: auto;
+    padding: 12px 12px 14px;
+  }
+
+  .hover-square {
+    width: 38px;
+    height: 38px;
+  }
+
+  .topbar {
+    font-size: 11px;
+  }
+
+  .menu-btn,
+  .contact-link {
+    font-size: 11px;
+  }
+
+  .brand {
+    font-size: 10px;
+  }
+
+  .brand-logo {
+    width: 26px;
+    height: 16px;
+  }
+
+  .headline-row {
+    margin-top: 12px;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: clamp(54px, 16vw, 72px);
+    letter-spacing: -0.04em;
+    line-height: 0.92;
+  }
+
+  .request-btn {
+    margin-top: 0;
+    padding: 7px 10px;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  .mid-row {
+    margin-top: 10px;
+    padding-top: 10px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .right-note {
+    font-size: 14px;
+    line-height: 1.25;
+    text-align: left;
+  }
+
+  .content-row {
+    margin-top: 14px;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    align-items: start;
+    flex: none;
+  }
+
+  .left-copy h2 {
+    font-size: 48px;
+    line-height: 0.96;
+  }
+
+  .left-copy p {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+  .product-wrap {
+    min-width: 0;
+    width: 100%;
+    justify-content: center;
+    transform: none;
+    padding: 2px 0 0;
+  }
+
+  .tablet {
+    width: min(65vw, 250px);
+    height: min(65vw, 250px);
+    border-radius: 20%;
+  }
+
+  .rotating-logo {
+    width: 50%;
+    height: 50%;
+  }
+
+  .footer {
+    font-size: 10px;
+    margin-top: 12px;
+    opacity: 0.75;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 10px 10px 12px;
+  }
+
+  .topbar {
+    font-size: 10px;
+  }
+
+  .menu-btn,
+  .contact-link {
+    font-size: 10px;
+  }
+
+  .brand {
+    font-size: 9px;
+  }
+
+  h1 {
+    font-size: clamp(44px, 15vw, 60px);
+  }
+
+  .request-btn {
+    padding: 6px 9px;
+    font-size: 9px;
+  }
+
+  .left-copy h2 {
+    font-size: 30px;
+  }
+
+  .left-copy p {
+    font-size: 11px;
+  }
+
+  .tablet {
+    width: min(68vw, 220px);
+    height: min(68vw, 220px);
+  }
+
+  .footer {
+    font-size: 9px;
+  }
+}
+
+@media (hover: none) {
+  .hover-square {
+    display: none;
   }
 }
 
