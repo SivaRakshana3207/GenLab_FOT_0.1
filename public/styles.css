@@ -88,6 +88,23 @@ body {
     linear-gradient(180deg, #253e18 0%, #405b2a 36%, #8fa36b 100%);
 }
 
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+.hover-square {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  background: rgba(179, 202, 102, 0.78);
+  box-shadow: 0 0 0 1px rgba(145, 166, 77, 0.32) inset;
+  pointer-events: none;
+  z-index: 1;
+  transform: translate(-50%, -50%) scale(0.75);
+  animation: hoverSquarePop 0.55s ease-out forwards;
+}
+
 .hero-active {
   visibility: visible;
 }
@@ -406,4 +423,15 @@ h1 {
 @keyframes splashFadeOut {
   from { opacity: 1; visibility: visible; }
   to { opacity: 0; visibility: hidden; }
+}
+
+@keyframes hoverSquarePop {
+  0% {
+    opacity: 0.9;
+    transform: translate(-50%, -50%) scale(0.75);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.06);
+  }
 }
